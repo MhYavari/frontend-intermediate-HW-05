@@ -1,4 +1,4 @@
-export function creatEmitter() {
+export function createEmitter() {
   const listeners = {};
 
   return {

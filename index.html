@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shelf</title>
+  </head>
+  <body class="flex min-h-screen flex-col bg-amber-50 text-stone-800">
+    <header class="sticky top-0 z-10 bg-emerald-800 text-amber-50 shadow-sm">
+      <div class="mx-auto flex max-w-5xl items-center gap-3 px-4 py-3">
+        <button
+          id="home"
+          class="shrink-0 font-serif text-2xl font-bold text-amber-50"
+        >
+          Shelf
+        </button>
+        <input
+          id="search"
+          type="search"
+          placeholder="Search books or authors…"
+          class="min-w-0 flex-1 rounded-lg border border-emerald-700 bg-amber-50 px-3 py-2 text-sm text-stone-800 outline-none placeholder:text-stone-400 focus:ring-2 focus:ring-amber-400"
+        />
+        <button
+          id="shelf-btn"
+          class="shrink-0 rounded-lg bg-amber-400 px-3 py-2 text-sm font-medium text-emerald-950 hover:bg-amber-300"
+        >
+          Reading list
+          <span
+            id="badge"
+            class="ml-1 rounded-full bg-emerald-900 px-2 text-xs font-bold text-amber-50"
+            >0</span
+          >
+        </button>
+      </div>
+    </header>
+
+    <main class="mx-auto w-full max-w-5xl flex-1 px-4 py-6">
+      <div id="view"></div>
+    </main>
+
+    <footer
+      class="border-t border-stone-200 py-4 text-center text-xs text-stone-400"
+    >
+      Data from
+      <a href="https://openlibrary.org" class="underline">Open Library</a>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
